@@ -7,6 +7,7 @@ class Asyncawaitclass extends Component {
   getdata = async () => {
     const response = await fetch("https://fakestoreapi.com/products");
     const getrespnonsedata = await response.json();
+
     this.setState({ data: getrespnonsedata });
 
     try {
@@ -19,7 +20,7 @@ class Asyncawaitclass extends Component {
   }
 
   render() {
-    console.log(this.state.data, "data");
+    // console.log(this.state.data, "data");
     return (
       <>
         <h2>fetch data using class component using then method</h2>
