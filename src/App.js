@@ -1,10 +1,21 @@
-import React from 'react'
-import Counterdisplay from './Counterdisplay';
+import React from "react";
+import Asyncawaitclass from "./classcomponent/Asyncawaitclass";
+import Thenclass from "./classcomponent/Thenclass";
+import Asyncawaitdata from "./functional/Asyncawaitdata";
+import Todoclass from "./Todoclass";
+// import Then from "./functional/Then";
 
 const App = () => {
   return (
-    <Counterdisplay/>
-  )
-}
+    <>
+      {/* <Then /> */}
+      {/* <Asyncawaitdata /> */}
+      {/* <Thenclass /> */}
+      {/* <Asyncawaitclass /> */}
 
-export default App
+      <Todoclass />
+    </>
+  );
+};
+
+export default App;
